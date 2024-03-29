@@ -1,0 +1,9 @@
+[2024-03-29 11:43:48] local.ERROR: There are no commands defined in the "breeze" namespace. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"breeze\" namespace. at E:\\logiciel\\wamp64\\www\\bossy\\LaraReact\\vendor\\symfony\\console\\Application.php:669)
+[stacktrace]
+#0 E:\\logiciel\\wamp64\\www\\bossy\\LaraReact\\vendor\\symfony\\console\\Application.php(720): Symfony\\Component\\Console\\Application->findNamespace('breeze')
+#1 E:\\logiciel\\wamp64\\www\\bossy\\LaraReact\\vendor\\symfony\\console\\Application.php(266): Symfony\\Component\\Console\\Application->find('breeze:install')
+#2 E:\\logiciel\\wamp64\\www\\bossy\\LaraReact\\vendor\\symfony\\console\\Application.php(175): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 E:\\logiciel\\wamp64\\www\\bossy\\LaraReact\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(201): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 E:\\logiciel\\wamp64\\www\\bossy\\LaraReact\\artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
