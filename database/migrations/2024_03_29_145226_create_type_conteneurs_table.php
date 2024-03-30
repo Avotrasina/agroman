@@ -12,7 +12,8 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('type_conteneurs', function (Blueprint $table) {
-            $table->id();
+            $table->id('idCont');
+            $table->string('nom');
             $table->timestamps();
         });
     }

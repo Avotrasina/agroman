@@ -8,4 +8,5 @@ use Illuminate\Database\Eloquent\Model;
 class Stocker extends Model
 {
     use HasFactory;
+    
 }
