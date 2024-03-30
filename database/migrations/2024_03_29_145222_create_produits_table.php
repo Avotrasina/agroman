@@ -19,6 +19,7 @@ return new class extends Migration
             $table->integer('unite');
             $table->integer('vie');
             $table->integer('idCat');
+            $table->integer('idCont');
             $table->timestamps();
         });
     }
