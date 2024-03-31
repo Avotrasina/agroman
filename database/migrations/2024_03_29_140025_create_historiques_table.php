@@ -14,7 +14,6 @@ return new class extends Migration
         Schema::create('historiques', function (Blueprint $table) {
             $table->increments('idH');
             $table->string('type', 1);
-            $table->date('Date');
             $table->string('Produit', 50);
             $table->string('Categorie', 50);
             $table->integer('unite');
@@ -22,6 +21,7 @@ return new class extends Migration
             $table->string('conteneur', 50);
             $table->string('user', 50);
             $table->string('Lieu', 50);
+            $table->timestamps();
         });
     }
 
