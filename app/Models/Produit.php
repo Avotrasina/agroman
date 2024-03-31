@@ -4,19 +4,27 @@ namespace App\Models;
 
 use App\Models\Categorie;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\HasOne;
+use Illuminate\Database\Eloquent\Relations\{HasOne,HasMany,BelongsTo,BelongsToMany};
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class Produit extends Model
 {
     use HasFactory;
-    protected $primaryKey ='idP'; 
-    public function categorie(): HasOne {
-        return $this->hasOne(Categorie::class);
+    protected $primaryKey ='idPro'; 
+
+    public function categorie(): BelongsTo
+    {
+        return $this->belongsTo(Categorie::class, 'idCat', 'idCat');
     }
 
-    public function typeConteneur(): HasOne {
-        return $this->hasOne(TypeConteneur::class);
+    public function conteneurs(): BelongsToMany
+    {
+        return $this->belongsToMany(Conteneur::class, 'stockers', 'idPro', 'idCont');
+    }
+
+    public function typeConteneur(): BelongsTo
+    {
+        return $this->belongsTo(TypeConteneur::class, 'idTypeCont', 'idType');
     }
 
 }

@@ -8,4 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class Provenance extends Model
 {
     use HasFactory;
+    protected $primaryKey = 'idP';
+    public $timestamps = false;
 }

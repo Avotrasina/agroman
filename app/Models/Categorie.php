@@ -10,6 +10,8 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 class Categorie extends Model
 {
     use HasFactory;
+    protected $primaryKey = 'idCat';
+    
     public function produits(): HasMany {
         return $this->hasMany(Produit::class);
     }
