@@ -12,8 +12,8 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('provenances', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
+            $table->increments('idP');
+            $table->string('LieuP', 50);
         });
     }
 

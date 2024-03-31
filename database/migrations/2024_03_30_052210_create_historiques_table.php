@@ -12,8 +12,16 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('historiques', function (Blueprint $table) {
-            $table->increments('id');
-            $table->timestamps();
+            $table->increments('idH');
+            $table->string('type', 1);
+            $table->date('Date');
+            $table->string('Produit', 50);
+            $table->string('Categorie', 50);
+            $table->integer('unite');
+            $table->integer('quantite');
+            $table->string('conteneur', 50);
+            $table->string('user', 50);
+            $table->string('Lieu', 50);
         });
     }
 
