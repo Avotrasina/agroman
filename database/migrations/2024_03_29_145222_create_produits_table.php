@@ -12,15 +12,14 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('produits', function (Blueprint $table) {
-            $table->increments('idP');
+            $table->increments('idPro');
             $table->string('libelle', 50);
-            $table->integer('unite');
             $table->string('photo');
             $table->integer('unite');
             $table->integer('vie');
             $table->integer('idCat');
-            $table->integer('idCont');
-            $table->timestamps();
+            $table->integer('idTypeCont');
+            $table->dateTime('created_at')->useCurrent();
         });
     }
 

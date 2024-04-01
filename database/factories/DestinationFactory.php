@@ -16,8 +16,10 @@ class DestinationFactory extends Factory
      */
     public function definition(): array
     {
+        // $arr = ['Antananarivo', 'Toamasina', 'Antsirabe', 'Fianarantsoa', 'Mahajanga', 'Toliara', 'Antsiranana', 'Morondava', 'Ambanja', 'Ambositra'];
+        // $p = \App\Models\Destination::All()->count();
         return [
-            //
+            'lieuD' => fake()->country(),
         ];
     }
 }

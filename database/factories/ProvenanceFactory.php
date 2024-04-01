@@ -16,8 +16,10 @@ class ProvenanceFactory extends Factory
      */
     public function definition(): array
     {
+        // $arr = ['Antananarivo', 'Toamasina', 'Antsirabe', 'Fianarantsoa', 'Mahajanga', 'Toliara', 'Antsiranana', 'Morondava', 'Ambanja', 'Ambositra'];
+        // $p = \App\Models\Provenance::All()->last() ? \App\Models\Provenance::All()->last()->id + 1 : 0;
         return [
-            //
+            'lieuP' => fake()->country(),
         ];
     }
 }

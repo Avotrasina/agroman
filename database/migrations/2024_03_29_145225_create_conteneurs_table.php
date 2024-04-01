@@ -15,7 +15,8 @@ return new class extends Migration
             $table->id('idCont');
             $table->string('nom');
             $table->integer('capacite');
-            $table->timestamps();
+            $table->integer('type');
+            $table->dateTime('created_at')->useCurrent();
         });
     }
 
