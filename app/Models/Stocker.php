@@ -18,12 +18,12 @@ class Stocker extends Model
     
     public function conteneur(): BelongsTo
     {
-        return $this->belongsTo(Conteneur::class, 'idCount', 'idCount');
+        return $this->belongsTo(Conteneur::class, 'idCont', 'idCont');
     }
     
     public function provenance(): BelongsTo
     {
-        return $this->belongsTo(Provenance::class, 'idPr', 'idP');
+        return $this->belongsTo(Provenance::class, 'idP', 'idP');
     }
 
 }

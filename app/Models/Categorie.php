@@ -11,24 +11,10 @@ class Categorie extends Model
 {
     use HasFactory;
     protected $primaryKey = 'idCat';
-    
+    protected $fillable = ['idCat', 'nom'];
+
     public function produits(): HasMany {
         return $this->hasMany(Produit::class);
     }
 }
-Categorie::create(
-    [
-    'idCat' => 1,
-    'nom' => 'Epices'
-    ],
 
-    [
-    'idCat' => 2,
-    'nom' => 'Huiles'
-    ],
-    
-    [
-    'idCat' => 1,
-    'nom' => 'Fruits'
-    ],
-);

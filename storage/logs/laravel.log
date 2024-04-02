@@ -912,3 +912,22 @@
 #40 E:\\logiciel\\wamp64\\www\\bossy\\GitClone\\agroman\\artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
 #41 {main}
 "} 
+[2024-04-02 06:12:58] local.ERROR: Illuminate\Console\Application::add(): Argument #1 ($command) must be of type Symfony\Component\Console\Command\Command, App\Models\Produit given, called in D:\PROJETS\LARAVEL\agroman\vendor\laravel\tinker\src\Console\TinkerCommand.php on line 109 {"exception":"[object] (TypeError(code: 0): Illuminate\\Console\\Application::add(): Argument #1 ($command) must be of type Symfony\\Component\\Console\\Command\\Command, App\\Models\\Produit given, called in D:\\PROJETS\\LARAVEL\\agroman\\vendor\\laravel\\tinker\\src\\Console\\TinkerCommand.php on line 109 at D:\\PROJETS\\LARAVEL\\agroman\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php:211)
+[stacktrace]
+#0 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\laravel\\tinker\\src\\Console\\TinkerCommand.php(109): Illuminate\\Console\\Application->add(Object(App\\Models\\Produit))
+#1 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\laravel\\tinker\\src\\Console\\TinkerCommand.php(60): Laravel\\Tinker\\Console\\TinkerCommand->getCommands()
+#2 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): Laravel\\Tinker\\Console\\TinkerCommand->handle()
+#3 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#4 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#5 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#6 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(662): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#7 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(211): Illuminate\\Container\\Container->call(Array)
+#8 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\symfony\\console\\Command\\Command.php(326): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#9 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(180): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#10 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\symfony\\console\\Application.php(1096): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#11 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\symfony\\console\\Application.php(324): Symfony\\Component\\Console\\Application->doRunCommand(Object(Laravel\\Tinker\\Console\\TinkerCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#12 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\symfony\\console\\Application.php(175): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#13 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(201): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#14 D:\\PROJETS\\LARAVEL\\agroman\\artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#15 {main}
+"} 
