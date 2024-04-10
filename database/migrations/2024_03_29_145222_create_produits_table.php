@@ -18,6 +18,7 @@ return new class extends Migration
             $table->integer('unite');
             $table->integer('vie');
             $table->integer('idCat');
+            $table->integer('Qte');
             $table->integer('idTypeCont');
             $table->dateTime('created_at')->useCurrent();
         });

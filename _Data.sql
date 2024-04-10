@@ -1,3 +1,20 @@
+/**
+INSERT INTO `categories` VALUES (1,'Epices','2024-04-01 09:09:53'),(2,'Huiles','2024-04-01 09:09:53'),(3,'Fruits & légumes','2024-04-01 09:09:53');
+INSERT INTO `conteneurs` VALUES (1,'R1',150,1,'2024-04-01 09:51:06'),(2,'R3',250,1,'2024-04-01 09:51:06'),(3,'R2',250,1,'2024-04-01 09:51:06'),(4,'R4',450,1,'2024-04-01 09:51:06'),(5,'C3',450,2,'2024-04-01 09:51:06'),(6,'C2',350,2,'2024-04-01 09:51:06'),(7,'C1',350,2,'2024-04-01 09:51:06'),(8,'CF1',1500,3,'2024-04-01 09:51:06'),(9,'CS2',450,4,'2024-04-01 09:51:06'),(10,'CS1',450,4,'2024-04-01 09:51:06');
+INSERT INTO `destinations` VALUES (1,'Tiko Madagascar'),(2,'Agrival'),(3,'RefrigePêche'),(4,'JB');
+INSERT INTO `produits` VALUES (1,'Fraise','fraise.jpg',150,10,50,3,1,'2024-04-01 10:02:01'),(2,'Carotte','carotte.jpg',450,90, 150,3,1,'2024-04-01 10:02:01'),(3,'Vanille','vanille.jpg',1500,650, 80, 1,4,'2024-04-01 10:02:01'),(4,'Poivre','poivre.jpg',450,150, 450,1,4,'2024-04-01 10:02:01'),(5,'Café','café.jpg',250,325, 250, 1,4,'2024-04-01 10:02:01'),(6,'Cacao','cacao.jpg',350,365, 50, 1,4,'2024-04-01 10:02:01'),(7,'Banane','banane.jpg',80,10, 45, 3,1,'2024-04-01 10:02:01');
+INSERT INTO `provenances` VALUES (1,'Antsirabe');
+INSERT INTO `stockers` VALUES (1,7,1,1,'2022-05-28 00:00:00',14,12);
+INSERT INTO `type_conteneurs` VALUES (1,'Réfrigérateur','2024-04-01 09:13:15'),(2,'Congélateur','2024-04-01 09:13:15'),(3,'Chambre Froide','2024-04-01 09:13:15'),(4,'Chambre de stockage','2024-04-01 09:37:06');
+
+
+
+
+*/
+
+
+
+
 CREATE DATABASE  IF NOT EXISTS `agrival` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
 USE `agrival`;
 -- MySQL dump 10.13  Distrib 8.0.33, for Win64 (x86_64)
@@ -248,6 +265,7 @@ CREATE TABLE `produits` (
   `photo` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `unite` int NOT NULL,
   `vie` int NOT NULL,
+  `qte` int NOT NULL,
   `idCat` int NOT NULL,
   `idTypeCont` int NOT NULL,
   `created_at` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -261,7 +279,7 @@ CREATE TABLE `produits` (
 
 LOCK TABLES `produits` WRITE;
 /*!40000 ALTER TABLE `produits` DISABLE KEYS */;
-INSERT INTO `produits` VALUES (1,'Fraise','fraise.jpg',150,10,3,1,'2024-04-01 10:02:01'),(2,'Carotte','carotte.jpg',450,90,3,1,'2024-04-01 10:02:01'),(3,'Vanille','vanille.jpg',1500,650,1,4,'2024-04-01 10:02:01'),(4,'Poivre','poivre.jpg',450,150,1,4,'2024-04-01 10:02:01'),(5,'Café','café.jpg',250,325,1,4,'2024-04-01 10:02:01'),(6,'Cacao','cacao.jpg',350,365,1,4,'2024-04-01 10:02:01'),(7,'Banane','banane.jpg',80,10,3,1,'2024-04-01 10:02:01');
+INSERT INTO `produits` VALUES (1,'Fraise','fraise.jpg',150,10,50,3,1,'2024-04-01 10:02:01'),(2,'Carotte','carotte.jpg',450,90, 150,3,1,'2024-04-01 10:02:01'),(3,'Vanille','vanille.jpg',1500,650, 80, 1,4,'2024-04-01 10:02:01'),(4,'Poivre','poivre.jpg',450,150, 450,1,4,'2024-04-01 10:02:01'),(5,'Café','café.jpg',250,325, 250, 1,4,'2024-04-01 10:02:01'),(6,'Cacao','cacao.jpg',350,365, 50, 1,4,'2024-04-01 10:02:01'),(7,'Banane','banane.jpg',80,10, 45, 3,1,'2024-04-01 10:02:01');
 /*!40000 ALTER TABLE `produits` ENABLE KEYS */;
 UNLOCK TABLES;
 
