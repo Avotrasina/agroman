@@ -16,30 +16,19 @@ class HistoriqueFactory extends Factory
      */
     public function definition(): array
     {
-        $tableau = ['Litchis', 'Bananes', 'Combavas', 'Citrons','Poivre', 'Girofle', 'Cannelle', 'Gingembre', 'Curcuma', 'Poivre sauvage', 'Vanille', 'Piment', 'Muscade', 'Café', 'Combava', 'Citron', 'Banane'];
-        $tableau2 = ["Fruit" , "Epice"];
-        $indexAleatoire = array_rand($tableau);
-        $indexAleatoire2 = array_rand($tableau2);
-        $elementAleatoire = $tableau[$indexAleatoire];
-        $elementAleatoire2 = $tableau2[$indexAleatoire2];
-        $y = rand(0, 10);
-        $t = rand(0,1);
-        $lieuxMadagascar = array(
-            array("Antananarivo", "Toamasina", "Antsirabe", "Fianarantsoa", "Mahajanga", "Toliara", "Antsiranana", "Morondava", "Ambanja", "Ambositra"),
-            array("Diego-Suarez", "Tamatave", "Toamasina", "Fianarantsoa", "Antsiranana", "Toliara", "Antsiranana", "Morondava", "Ambanja", "Ambositra")
-        );
-        $i = rand(0,9);
+        $produit = \App\Models\Produit::find(random_int(1,10));
+        $y = random_int(1,20);
         return [
             //
-            'type'=> $t == 1 ? 'E' : 'S',
-            'Date'=> fake()->date(),
-            'Produit'=> $elementAleatoire,
-            'Categorie'=> $elementAleatoire2,
+            'type'=> ((random_int(0,20000))/2 == 1) ? 'E' : 'S',
+            'Produit'=> $produit->libelle,
+            'Categorie'=> $produit->categories->nom,
             'unite'=> $y,
-            'quantite'=> $y*rand(5,50),
+            'quantite'=> intval($produit->unite) * $y,
             'conteneur'=> rand(0, 10),
             'user'=> fake()->name(),
-            'Lieu'=> $lieuxMadagascar[$t][$i]
+            'Lieu'=> \App\Models\Destination::find(random_int(1,3)),
+            'created_at' => fake()->datetime()
         ];
     }
 }

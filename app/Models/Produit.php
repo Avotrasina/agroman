@@ -12,6 +12,7 @@ class Produit extends Model
     use HasFactory;
     protected $primaryKey ='idPro'; 
     protected $fillable = ['idPro'];
+    public $timestamps = false;
     public function categories(): BelongsTo
     {
         return $this->belongsTo(Categorie::class, 'idCat', 'idCat');

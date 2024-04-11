@@ -10,7 +10,7 @@ class Stocker extends Model
 {
     use HasFactory;
     protected $primaryKey = "idStock";
-
+    public $timestamps = false;
     public function produit(): BelongsTo
     {
         return $this->belongsTo(Produit::class, 'idPro', 'idPro');

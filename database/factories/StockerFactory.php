@@ -18,6 +18,12 @@ class StockerFactory extends Factory
     {
         return [
             //
+            'idPro'=> fake()->numberBetween(1,10),
+            'idCont'=> fake()->numberBetween(1,12),
+            'idPr'=> fake()->numberBetween(1,4),
+            'date'=> fake()->datetime(),
+            'quantite'=> fake()->numberBetween(1,5),
+            'vie'=> fake()->numberBetween(1,3),
         ];
     }
 }
