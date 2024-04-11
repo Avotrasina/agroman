@@ -223,6 +223,7 @@ CREATE TABLE IF NOT EXISTS `produits` (
   `photo` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `unite` int NOT NULL,
   `vie` int NOT NULL,
+  `qte` int NOT NULL,
   `idCat` int NOT NULL,
   `Qte` int NOT NULL,
   `idTypeCont` int NOT NULL,
@@ -234,6 +235,7 @@ CREATE TABLE IF NOT EXISTS `produits` (
 -- Déchargement des données de la table `produits`
 --
 
+<<<<<<< HEAD
 INSERT INTO `produits` (`idPro`, `libelle`, `photo`, `unite`, `vie`, `idCat`, `Qte`, `idTypeCont`, `created_at`) VALUES
 (1, 'Fraise', 'Adams', 12, 12, 3, 12, 3, '2024-04-10 12:10:35'),
 (2, 'Orange', 'Jacobi', 16, 10, 1, 26, 2, '2024-04-10 12:10:35'),
@@ -247,6 +249,13 @@ INSERT INTO `produits` (`idPro`, `libelle`, `photo`, `unite`, `vie`, `idCat`, `Q
 (10, 'Carotte', 'Stehr', 9, 12, 2, 8, 2, '2024-04-10 12:10:36');
 
 -- --------------------------------------------------------
+=======
+LOCK TABLES `produits` WRITE;
+/*!40000 ALTER TABLE `produits` DISABLE KEYS */;
+INSERT INTO `produits` VALUES (1,'Fraise','fraise.jpg',150,10,50,3,1,'2024-04-01 10:02:01'),(2,'Carotte','carotte.jpg',450,90, 150,3,1,'2024-04-01 10:02:01'),(3,'Vanille','vanille.jpg',1500,650, 80, 1,4,'2024-04-01 10:02:01'),(4,'Poivre','poivre.jpg',450,150, 450,1,4,'2024-04-01 10:02:01'),(5,'Café','café.jpg',250,325, 250, 1,4,'2024-04-01 10:02:01'),(6,'Cacao','cacao.jpg',350,365, 50, 1,4,'2024-04-01 10:02:01'),(7,'Banane','banane.jpg',80,10, 45, 3,1,'2024-04-01 10:02:01');
+/*!40000 ALTER TABLE `produits` ENABLE KEYS */;
+UNLOCK TABLES;
+>>>>>>> 5e8239b343e082c885e1191c305871444960573c
 
 --
 -- Structure de la table `provenances`

@@ -931,6 +931,7 @@
 #14 D:\\PROJETS\\LARAVEL\\agroman\\artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
 #15 {main}
 "} 
+<<<<<<< HEAD
 [2024-04-10 07:38:40] local.ERROR: Class "Destination" does not exist {"exception":"[object] (ReflectionException(code: -1): Class \"Destination\" does not exist at E:\\logiciel\\wamp64\\www\\bossy\\GitClone\\agroman\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\RouteListCommand.php:225)
 [stacktrace]
 #0 E:\\logiciel\\wamp64\\www\\bossy\\GitClone\\agroman\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\RouteListCommand.php(225): ReflectionClass->__construct('Destination')
@@ -3981,4 +3982,155 @@
 #47 E:\\logiciel\\wamp64\\www\\bossy\\GitClone\\agroman\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
 #48 E:\\logiciel\\wamp64\\www\\bossy\\GitClone\\agroman\\public\\index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #49 {main}
+=======
+[2024-04-10 10:37:44] local.ERROR: Vite manifest not found at: D:\PROJETS\LARAVEL\agroman\public\build/manifest.json {"view":{"view":"D:\\PROJETS\\LARAVEL\\agroman\\resources\\views\\app.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-1514652064 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#315</a><samp data-depth=1 class=sf-dump-expanded>
+  #<span class=sf-dump-protected title=\"Protected property\">bags</span>: []
+</samp>}
+</pre><script>Sfdump(\"sf-dump-1514652064\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
+","page":"<pre class=sf-dump id=sf-dump-653062119 data-indent-pad=\"  \"><span class=sf-dump-note>array:4</span> [<samp data-depth=1 class=sf-dump-expanded>
+  \"<span class=sf-dump-key>component</span>\" => \"<span class=sf-dump-str title=\"7 characters\">Welcome</span>\"
+  \"<span class=sf-dump-key>props</span>\" => <span class=sf-dump-note>array:6</span> [<samp data-depth=2 class=sf-dump-compact>
+    \"<span class=sf-dump-key>errors</span>\" => {<a class=sf-dump-ref>#342</a>}
+    \"<span class=sf-dump-key>auth</span>\" => <span class=sf-dump-note>array:1</span> [<samp data-depth=3 class=sf-dump-compact>
+      \"<span class=sf-dump-key>user</span>\" => <span class=sf-dump-const>null</span>
+    </samp>]
+    \"<span class=sf-dump-key>canLogin</span>\" => <span class=sf-dump-const>true</span>
+    \"<span class=sf-dump-key>canRegister</span>\" => <span class=sf-dump-const>true</span>
+    \"<span class=sf-dump-key>laravelVersion</span>\" => \"<span class=sf-dump-str title=\"7 characters\">10.48.4</span>\"
+    \"<span class=sf-dump-key>phpVersion</span>\" => \"<span class=sf-dump-str title=\"6 characters\">8.2.12</span>\"
+  </samp>]
+  \"<span class=sf-dump-key>url</span>\" => \"<span class=sf-dump-str>/</span>\"
+  \"<span class=sf-dump-key>version</span>\" => \"<span class=sf-dump-str title=\"32 characters\">6666cd76f96956469e7be39d750cc7d9</span>\"
+</samp>]
+</pre><script>Sfdump(\"sf-dump-653062119\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
+"}},"exception":"[object] (Spatie\\LaravelIgnition\\Exceptions\\ViewException(code: 0): Vite manifest not found at: D:\\PROJETS\\LARAVEL\\agroman\\public\\build/manifest.json at D:\\PROJETS\\LARAVEL\\agroman\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Vite.php:728)
+[stacktrace]
+#0 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Vite.php(293): Illuminate\\Foundation\\Vite->manifest('build')
+#1 D:\\PROJETS\\LARAVEL\\agroman\\resources\\views\\app.blade.php(16): Illuminate\\Foundation\\Vite->__invoke(Object(Illuminate\\Support\\Collection))
+#2 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(123): require('D:\\\\PROJETS\\\\LARA...')
+#3 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(124): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
+#4 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('D:\\\\PROJETS\\\\LARA...', Array)
+#5 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(72): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('D:\\\\PROJETS\\\\LARA...', Array)
+#6 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(207): Illuminate\\View\\Engines\\CompilerEngine->get('D:\\\\PROJETS\\\\LARA...', Array)
+#7 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(190): Illuminate\\View\\View->getContents()
+#8 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(159): Illuminate\\View\\View->renderContents()
+#9 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Response.php(69): Illuminate\\View\\View->render()
+#10 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Response.php(35): Illuminate\\Http\\Response->setContent(Object(Illuminate\\View\\View))
+#11 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ResponseFactory.php(58): Illuminate\\Http\\Response->__construct(Object(Illuminate\\View\\View), 200, Array)
+#12 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ResponseFactory.php(88): Illuminate\\Routing\\ResponseFactory->make(Object(Illuminate\\View\\View), 200, Array)
+#13 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(355): Illuminate\\Routing\\ResponseFactory->view('app', Array)
+#14 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\inertiajs\\inertia-laravel\\src\\Response.php(110): Illuminate\\Support\\Facades\\Facade::__callStatic('view', Array)
+#15 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(900): Inertia\\Response->toResponse(Object(Illuminate\\Http\\Request))
+#16 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(885): Illuminate\\Routing\\Router::toResponse(Object(Illuminate\\Http\\Request), Object(Inertia\\Response))
+#17 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(805): Illuminate\\Routing\\Router->prepareResponse(Object(Illuminate\\Http\\Request), Object(Inertia\\Response))
+#18 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(144): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#19 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\AddLinkHeadersForPreloadedAssets.php(19): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#20 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\AddLinkHeadersForPreloadedAssets->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#21 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\inertiajs\\inertia-laravel\\src\\Middleware.php(87): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#22 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Inertia\\Middleware->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#23 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#24 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#25 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken.php(78): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#26 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#27 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Middleware\\ShareErrorsFromSession.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#28 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#29 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(121): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#30 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(64): Illuminate\\Session\\Middleware\\StartSession->handleStatefulRequest(Object(Illuminate\\Http\\Request), Object(Illuminate\\Session\\Store), Object(Closure))
+#31 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#32 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse.php(37): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#33 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#34 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\EncryptCookies.php(67): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#35 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#36 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#37 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(805): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#38 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(784): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#39 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(748): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#40 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(737): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#41 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(200): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#42 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(144): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#43 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#44 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#45 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#46 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#47 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#48 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#49 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#50 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#51 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(99): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#52 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#53 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#54 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#55 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#56 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#57 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#58 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#59 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#60 D:\\PROJETS\\LARAVEL\\agroman\\public\\index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#61 {main}
+
+[previous exception] [object] (Illuminate\\Foundation\\ViteManifestNotFoundException(code: 0): Vite manifest not found at: D:\\PROJETS\\LARAVEL\\agroman\\public\\build/manifest.json at D:\\PROJETS\\LARAVEL\\agroman\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Vite.php:728)
+[stacktrace]
+#0 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Vite.php(293): Illuminate\\Foundation\\Vite->manifest('build')
+#1 D:\\PROJETS\\LARAVEL\\agroman\\storage\\framework\\views\\e978b0182c2e936e5b3222ee4bc7bccc.php(16): Illuminate\\Foundation\\Vite->__invoke(Object(Illuminate\\Support\\Collection))
+#2 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(123): require('D:\\\\PROJETS\\\\LARA...')
+#3 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(124): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
+#4 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('D:\\\\PROJETS\\\\LARA...', Array)
+#5 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(72): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('D:\\\\PROJETS\\\\LARA...', Array)
+#6 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(207): Illuminate\\View\\Engines\\CompilerEngine->get('D:\\\\PROJETS\\\\LARA...', Array)
+#7 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(190): Illuminate\\View\\View->getContents()
+#8 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(159): Illuminate\\View\\View->renderContents()
+#9 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Response.php(69): Illuminate\\View\\View->render()
+#10 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Response.php(35): Illuminate\\Http\\Response->setContent(Object(Illuminate\\View\\View))
+#11 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ResponseFactory.php(58): Illuminate\\Http\\Response->__construct(Object(Illuminate\\View\\View), 200, Array)
+#12 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ResponseFactory.php(88): Illuminate\\Routing\\ResponseFactory->make(Object(Illuminate\\View\\View), 200, Array)
+#13 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(355): Illuminate\\Routing\\ResponseFactory->view('app', Array)
+#14 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\inertiajs\\inertia-laravel\\src\\Response.php(110): Illuminate\\Support\\Facades\\Facade::__callStatic('view', Array)
+#15 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(900): Inertia\\Response->toResponse(Object(Illuminate\\Http\\Request))
+#16 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(885): Illuminate\\Routing\\Router::toResponse(Object(Illuminate\\Http\\Request), Object(Inertia\\Response))
+#17 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(805): Illuminate\\Routing\\Router->prepareResponse(Object(Illuminate\\Http\\Request), Object(Inertia\\Response))
+#18 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(144): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#19 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\AddLinkHeadersForPreloadedAssets.php(19): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#20 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\AddLinkHeadersForPreloadedAssets->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#21 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\inertiajs\\inertia-laravel\\src\\Middleware.php(87): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#22 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Inertia\\Middleware->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#23 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#24 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#25 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken.php(78): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#26 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#27 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Middleware\\ShareErrorsFromSession.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#28 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#29 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(121): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#30 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(64): Illuminate\\Session\\Middleware\\StartSession->handleStatefulRequest(Object(Illuminate\\Http\\Request), Object(Illuminate\\Session\\Store), Object(Closure))
+#31 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#32 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse.php(37): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#33 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#34 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\EncryptCookies.php(67): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#35 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#36 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#37 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(805): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#38 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(784): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#39 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(748): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#40 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(737): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#41 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(200): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#42 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(144): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#43 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#44 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#45 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#46 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#47 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#48 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#49 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#50 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#51 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(99): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#52 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#53 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#54 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#55 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#56 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#57 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#58 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#59 D:\\PROJETS\\LARAVEL\\agroman\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#60 D:\\PROJETS\\LARAVEL\\agroman\\public\\index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#61 {main}
+>>>>>>> 5e8239b343e082c885e1191c305871444960573c
 "} 
