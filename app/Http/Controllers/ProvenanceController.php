@@ -13,6 +13,8 @@ class ProvenanceController extends Controller
     public function index()
     {
         //
+        $provenances = Provenance::all()->toJson();
+        return $provenances;
     }
 
     /**
@@ -29,6 +31,12 @@ class ProvenanceController extends Controller
     public function store(Request $request)
     {
         //
+        $provenance = new Provenance;
+        $provenance->LieuP = $request->input("LieuP");
+        $resultat = $provenance->save();
+        return response()->json([
+            'resultat' => $resultat
+        ]);
     }
 
     /**
@@ -53,13 +61,34 @@ class ProvenanceController extends Controller
     public function update(Request $request, Provenance $provenance)
     {
         //
+        $provenance = Provenance::find($request->input("idP"));
+        if($provenance){
+            $provenance->LieuP = $request->input("LieuP");
+            $resultat = $provenance->save();
+            return response()->json([
+                'resultat' => $resultat
+            ]);
+        }
+        return response()->json([
+            'resultat' => false
+        ]);
     }
 
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Provenance $provenance)
+    public function destroy(Request $request)
     {
         //
+        $provenance = Provenance::find($request->input("idP"));
+        if($provenance){
+            $resultat = $provenance->delete();
+            return response()->json([
+                'resultat' => $resultat
+            ]);
+        }
+        return response()->json([
+            'resultat' => false
+        ]);
     }
 }

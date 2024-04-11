@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\{ProfileController,DestinationController,ProvenanceController, HistoriqueController};
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
@@ -41,5 +41,14 @@ Route::middleware('auth')->group(function () {
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
+
+Route::resource('destinations', DestinationController::class);
+Route::resource('provenances', ProvenanceController::class);
+Route::resource('historiques', HistoriqueController::class);
+Route::get('entree',[HistoriqueController::class,'indexIN'])->name('entree');
+Route::post('entree',[HistoriqueController::class,'in'])->name('entree');
+Route::get('sortie',[HistoriqueController::class,'indexOUT'])->name('sortie');
+Route::post('sortie',[HistoriqueController::class,'out'])->name('sortie');
+
 
 require __DIR__.'/auth.php';

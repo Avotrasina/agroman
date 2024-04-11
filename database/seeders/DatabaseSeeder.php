@@ -20,7 +20,10 @@ class DatabaseSeeder extends Seeder
             // ]);
 
             \App\Models\Historique::factory(100)->create();
-            \App\Models\Provenance::factory(10)->create();
-            \App\Models\Destination::factory(10)->create();
+            // \App\Models\Provenance::factory(10)->create();
+            // \App\Models\Destination::factory(10)->create();
+            //  \App\Models\Produit::factory(10)->create();
+            //  \App\Models\Stocker::factory(20)->create();
+
     }
 }

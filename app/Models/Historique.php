@@ -9,4 +9,5 @@ class Historique extends Model
 {
     use HasFactory;
     protected $primaryKey = 'idH';
+    public $timestamps = false;
 }

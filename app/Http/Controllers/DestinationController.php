@@ -13,6 +13,8 @@ class DestinationController extends Controller
     public function index()
     {
         //
+        $destinations = Destination::all()->toJson();
+        return $destinations;
     }
 
     /**
@@ -29,6 +31,12 @@ class DestinationController extends Controller
     public function store(Request $request)
     {
         //
+        $destination = new Destination;
+        $destination->LieuP = $request->input("LieuP");
+        $resultat = $destination->save();
+        return response()->json([
+            'resultat' => $resultat
+        ]);
     }
 
     /**
@@ -53,13 +61,34 @@ class DestinationController extends Controller
     public function update(Request $request, Destination $destination)
     {
         //
+        $destination = Destination::find($request->input("idP"));
+        if($destination){
+            $destination->LieuP = $request->input("LieuP");
+            $resultat = $destination->save();
+            return response()->json([
+                'resultat' => $resultat
+            ]);
+        }
+        return response()->json([
+            'resultat' => false
+        ]);
     }
 
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Destination $destination)
+    public function destroy(Request $request)
     {
         //
+        $destination = Destination::find($request->input("idP"));
+        if($destination){
+            $resultat = $destination->delete();
+            return response()->json([
+                'resultat' => $resultat
+            ]);
+        }
+        return response()->json([
+            'resultat' => false
+        ]);
     }
 }
